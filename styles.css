@@ -1,11 +1,11 @@
-/* ==========================================================================
-   MASTER CSS ENGINE - PREMIUM INTERFACE UPGRADE (EXPLORE TRAVEL)
-   ========================================================================== */
+/* 
+HOME AND ABOUT PAGES (EXPLORE WORLD TRAVELS)
+ */
 
-/* 🚀 IMPORT THE PREMIUM POPPINS FONT DIRECTLY FROM GOOGLE SERVERS */
+
 @import url('https://googleapis.com');
 
-/* 1. Core Background Canvas Layout Settings */
+
 body {
     font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
     margin: 0;
@@ -113,14 +113,14 @@ section, body > p {
     font-size: 1.1rem;
 }
 
-/* Base list reset */
+
 ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/* 🚀 UPGRADE A: POPULAR DESTINATIONS (Capsule Flex Badges) */
+
 section:nth-of-type(2) ul {
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +196,7 @@ body > ul li, body > ol li {
     color: #334155;
 }
 
-/* 5. Unique Interactive Element Styling (Home Page Button) */
+/* Element Styling (Home Page Button) */
 button {
     background-color: #ff5a4e; 
     color: #ffffff;
@@ -218,7 +218,7 @@ button:hover {
     box-shadow: 0 6px 20px rgba(255, 90, 78, 0.45);
 }
 
-/* 6. Testimonial Quote Block Customization */
+/*  Testimonial Quote Block Customization */
 blockquote {
     background-color: #f8fafc; 
     border-left: 4px solid #0284c7;
@@ -237,7 +237,7 @@ blockquote strong {
     font-style: normal;
 }
 
-/* 7. Lower Content Tourist Sections (About Page Grid Frame) */
+/*  Lower Content Tourist Sections (About Page Grid Frame) */
 body > div {
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -293,7 +293,7 @@ body > div p {
     box-sizing: border-box;
 }
 
-/* 8. Unified Footer Processing */
+/*  Unified Footer Processing */
 footer, center:last-of-type p {
     background: #1e293b; 
     color: #94a3b8;
@@ -312,7 +312,7 @@ footer p, center:last-of-type p {
     font-weight: normal;
 }
 
-/* 9. Responsive Mobile Processing System Patch */
+/*  Responsive Mobile Processing System Patch */
 @media (max-width: 768px) {
     body > div { grid-template-columns: 1fr; padding: 25px 15px; }
     body > div h3 { grid-column: span 1; }
