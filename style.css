@@ -1,0 +1,16 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: skyblue;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: black;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    color: grey;
+}
