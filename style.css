@@ -1,16 +1,56 @@
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    color: skyblue;
-}
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    color: black;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: small;
-    color: grey;
+body{
+    background:white;
+    padding:50px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    color:skyblue;
+    font-size:48px;
+    margin-bottom:40px;
+}
+
+.contact-section{
+    display:flex;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.column{
+    flex:1;
+}
+
+h3{
+    color:grey;
+    font-size:24px;
+    margin-bottom:15px;
+    margin-top:20px;
+}
+
+p{
+    color:grey;
+    font-size:22px;
+    line-height:1.8;
+}
+
+i{
+    margin-right:10px;
+    color:grey;
+}
+
+.address h4{
+    color:grey;
+    font-size:30px;
+    margin:15px 0;
 }
