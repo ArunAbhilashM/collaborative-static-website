@@ -440,3 +440,138 @@ footer p, center:last-of-type p {
     section { padding: 20px 25px; }
     section:nth-of-type(3) ul { grid-template-columns: 1fr; }
 }
+/* ==========================================================
+   🚀 SAFELY ISOLATED CONTACT PAGE FIXES (WILL NOT LEAK)
+   ========================================================== */
+
+/* 1. Base Framework: Adds the background image ONLY to the contact page */
+body:has(.contact-section) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.85)), url('background_image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* 2. Page Title Styles - Only targets h1 inside the contact page container */
+.container h1 {
+    color: #0284c7; 
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* 3. Columns Layout - Creates the 3-column row system for the contact page */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: stretch; /* Forces cards to be the exact same height */
+}
+
+/* 4. Glass-style Cards - Only styles columns inside the contact section */
+.contact-section .column {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.90); 
+    backdrop-filter: blur(10px);
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.06);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* Elevation Hover Animation - Only applies to contact columns */
+.contact-section .column:hover {
+    transform: translateY(-5px);
+    border-color: #0284c7;
+    box-shadow: 0 15px 35px rgba(2, 132, 199, 0.15);
+}
+
+/* Subheadings inside contact columns */
+.contact-section .column h3 {
+    color: #1e293b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+}
+
+.contact-section .column h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Specific styling for the office title text row */
+.contact-section .address h4 {
+    color: #0284c7;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+/* 5. Text & Alignment Fix - Keeps emails on one line and prevents letter-dropping */
+.contact-section .column p {
+    color: #475569;
+    font-size: 0.95rem; /* Sized down so email fits on one line */
+    line-height: 1.6;
+    margin-bottom: 18px;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 12px; 
+    
+    word-break: break-word; 
+    overflow-wrap: break-word;
+}
+
+/* 6. Icon Alignment Fix - Perfectly centers font icons inside the circular badge */
+.contact-section .column p i {
+    color: #0284c7;
+    background: #e0f2fe;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    line-height: 0 !important; 
+    font-size: 1rem;
+    
+    flex-shrink: 0; 
+    margin: 0 !important; 
+    transition: all 0.3s ease;
+}
+
+/* Activates badge hover states only within contact cards */
+.contact-section .column:hover p i {
+    background: #0284c7;
+    color: #ffffff;
+}
+
+/* Alignment adjustment specifically for the multi-line address text block */
+.contact-section .address p {
+    align-items: flex-start !important; 
+}
+
+.contact-section .address p i {
+    margin-top: 2px !important; 
+}
+
+/* 7. Mobile Display Grid Adjustments */
+@media (max-width: 950px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
