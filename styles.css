@@ -7,14 +7,10 @@ HOME AND ABOUT PAGES (EXPLORE WORLD TRAVELS)
 
 
 body {
-    .pinyon-script-regular {
-  font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-    }
+    font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), url('background_image.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('background_image.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -24,11 +20,11 @@ body {
     line-height: 1.8;
 }
 
-/* 2. Unified Header & Top Title Panels */
+/*  Unified Header & Top Title Panels */
 header, center:first-of-type {
     display: block;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25)), url('valley.jpg');
     background-size: cover;
     background-position: center top;
     padding: 80px 20px 60px 20px;
@@ -41,7 +37,7 @@ header h1, center:first-of-type h1 {
     font-size: 3.5rem;
     margin: 0 0 10px 0;
     color: #1e293b; 
-    text-transform:capitalize;
+    text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 800;
     text-shadow: 0 4px 15px rgba(255, 255, 255, 0.9);
@@ -56,7 +52,7 @@ header p, center:first-of-type p {
     text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.9);
 }
 
-/* 3. Modern Navbar Button Bar Layout */
+/*  Modern Navbar Button Bar Layout */
 nav {
     display: flex;
     justify-content: center;
@@ -88,7 +84,7 @@ hr {
     display: none; 
 }
 
-/* 4. Section & Text Card Layout Boxes (Both Pages) */
+/*  Section & Text Card Layout Boxes (Both Pages) */
 section, h2 {
     max-width: 900px;
     margin: 0 auto;
@@ -152,7 +148,7 @@ section:nth-of-type(2) ul li:hover {
     box-shadow: 0 5px 15px rgba(2, 132, 199, 0.2);
 }
 
-/* 🚀 UPGRADE B: OUR SERVICES (Modern Grid Cards) */
+/*  OUR SERVICES (Modern Grid Cards) */
 section:nth-of-type(3) ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -182,136 +178,23 @@ section:nth-of-type(3) ul li:hover {
 }
 
 /* General list rule fallback for the About page */
-/* ==========================================================
-   UPDATED HIGH-QUALITY UI: WHY CHOOSE US & OUR SERVICES CARDS
-   ========================================================== */
-
-/* 1. Container Customization for Why Choose Us (Unordered List) */
-body > ul {
+body > p, body > ul, body > ol {
     max-width: 900px;
     margin: 0 auto 30px auto;
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 35px 40px;
+    background: #ffffff; 
+    padding: 30px 45px;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(30, 41, 59, 0.08);
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.06);
     border: 1px solid rgba(226, 232, 240, 0.8);
     box-sizing: border-box;
-    
-    /* Layout Setup */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    color: #475569;
+    font-size: 1.1rem;
 }
 
-body > ul li {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 18px 20px 18px 50px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 1.05rem;
-    color: #1e293b;
-    margin: 0;
-    position: relative;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-    transition: all 0.3s ease;
+body > ul li, body > ol li {
+    margin-bottom: 12px;
+    color: #334155;
 }
-
-/* Premium Blue Glowing Accent Hover Effect */
-body > ul li:hover {
-    background: #ffffff;
-    border-color: #0284c7;
-    color: #0284c7;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.12);
-}
-
-/* Beautiful Styled Icon Badge Indicator Replacement */
-body > ul li::before {
-    content: "✓";
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #e0f2fe;
-    color: #0284c7;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-
-/* 2. Container Customization for Our Services (Ordered List) */
-body > ol {
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 35px 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(30, 41, 59, 0.08);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    box-sizing: border-box;
-    
-    /* Layout Setup */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    counter-reset: tour-counter;
-}
-
-body > ol li {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 18px 20px 18px 55px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 1.05rem;
-    color: #1e293b;
-    margin: 0;
-    position: relative;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-    transition: all 0.3s ease;
-}
-
-/* Premium Interactive Elevation Shadow Effect */
-body > ol li:hover {
-    background: #ffffff;
-    border-color: #0284c7;
-    color: #0284c7;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.12);
-}
-
-/* Beautiful Styled Number Badge Indicator Replacement */
-body > ol li::before {
-    counter-increment: tour-counter;
-    content: counter(tour-counter);
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #1e293b;
-    color: #ffffff;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
-
-body > ol li:hover::before {
-    background: #0284c7;
-}
-
 
 /* Element Styling (Home Page Button) */
 button {
@@ -440,138 +323,173 @@ footer p, center:last-of-type p {
     section { padding: 20px 25px; }
     section:nth-of-type(3) ul { grid-template-columns: 1fr; }
 }
-/* ==========================================================
-   🚀 SAFELY ISOLATED CONTACT PAGE FIXES (WILL NOT LEAK)
-   ========================================================== */
 
-/* 1. Base Framework: Adds the background image ONLY to the contact page */
-body:has(.contact-section) {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.85)), url('background_image.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    padding: 60px 20px;
+/* =============================================
+   CONTACT PAGE 
+   ============================================= */
+
+/* Outer wrapper — override body > div grid */
+div.ct-wrapper {
+    display: block !important;
+    grid-template-columns: unset !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 1080px;
+    width: 100%;
+    margin: 40px auto 60px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
-/* 2. Page Title Styles - Only targets h1 inside the contact page container */
-.container h1 {
-    color: #0284c7; 
-    font-size: 48px;
-    font-weight: 800;
-    margin-bottom: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* 3. Columns Layout - Creates the 3-column row system for the contact page */
-.contact-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: stretch; /* Forces cards to be the exact same height */
-}
-
-/* 4. Glass-style Cards - Only styles columns inside the contact section */
-.contact-section .column {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.90); 
-    backdrop-filter: blur(10px);
-    padding: 35px 30px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.06);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    transition: all 0.3s ease;
-}
-
-/* Elevation Hover Animation - Only applies to contact columns */
-.contact-section .column:hover {
-    transform: translateY(-5px);
-    border-color: #0284c7;
-    box-shadow: 0 15px 35px rgba(2, 132, 199, 0.15);
-}
-
-/* Subheadings inside contact columns */
-.contact-section .column h3 {
-    color: #1e293b;
-    font-size: 1.1rem;
+/* "Talk to us" heading */
+.ct-title {
+    font-size:40px;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-bottom: 15px;
-    margin-top: 25px;
-    border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 5px;
+    color: #1e293b;
+    margin: 0 0 24px 0;
+    padding: 0 !important;
+    border-left: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.85);
+    max-width: unset !important;
 }
 
-.contact-section .column h3:first-of-type {
+/* Three equal columns */
+.ct-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    align-items: start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Card base */
+.ct-card {
+    background: rgba(255, 255, 255, 0.93);
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    border-radius: 16px;
+    padding: 24px 22px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.07);
+    min-width: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.ct-card:hover {
+    transform: translateY(-4px);
+    border-color: #0284c7;
+    box-shadow: 0 15px 30px rgba(2, 132, 199, 0.13);
+}
+
+/* Address card highlight */
+.ct-address {
+    background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+    border-color: #bae6fd;
+}
+
+/* Section sub-headings inside cards */
+.ct-card-heading {
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #1e293b;
+    padding-bottom: 8px;
+    margin: 18px 0 10px 0;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.ct-card-heading:first-child {
     margin-top: 0;
 }
 
-/* Specific styling for the office title text row */
-.contact-section .address h4 {
-    color: #0284c7;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 15px 0;
-}
-
-/* 5. Text & Alignment Fix - Keeps emails on one line and prevents letter-dropping */
-.contact-section .column p {
-    color: #475569;
-    font-size: 0.95rem; /* Sized down so email fits on one line */
-    line-height: 1.6;
-    margin-bottom: 18px;
-    
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start;
-    gap: 12px; 
-    
-    word-break: break-word; 
-    overflow-wrap: break-word;
-}
-
-/* 6. Icon Alignment Fix - Perfectly centers font icons inside the circular badge */
-.contact-section .column p i {
-    color: #0284c7;
-    background: #e0f2fe;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    
-    line-height: 0 !important; 
+/* HQ title in address card */
+.ct-hq {
     font-size: 1rem;
-    
-    flex-shrink: 0; 
-    margin: 0 !important; 
-    transition: all 0.3s ease;
+    font-weight: 700;
+    color: #0284c7;
+    margin: 6px 0 14px 0;
 }
 
-/* Activates badge hover states only within contact cards */
-.contact-section .column:hover p i {
+
+.ct-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.ct-address .ct-row {
+    align-items: flex-start;
+}
+
+/* Icon badge */
+.ct-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background: #e0f2fe;
+    border-radius: 50%;
+    color: #0284c7;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ct-card:hover .ct-icon {
     background: #0284c7;
     color: #ffffff;
 }
 
-/* Alignment adjustment specifically for the multi-line address text block */
-.contact-section .address p {
-    align-items: flex-start !important; 
+/* Text beside icon */
+.ct-text {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
-.contact-section .address p i {
-    margin-top: 2px !important; 
+.ct-text strong {
+    color: #1e293b;
+    font-weight: 600;
 }
 
-/* 7. Mobile Display Grid Adjustments */
-@media (max-width: 950px) {
-    .contact-section {
-        flex-direction: column;
-        gap: 25px;
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+    .ct-grid {
+        grid-template-columns: 1fr 1fr;
     }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 580px) {
+    .ct-grid {
+        grid-template-columns: 1fr;
+    }
+    div.ct-wrapper {
+        padding: 0 15px;
+    }
+}
+/* --- Fix: Planning a Trip card email overflow --- */
+.ct-grid .ct-card:first-child .ct-text {
+    font-size: 0.82rem;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+}
+
+/* --- Fix: ensure all 3 cards stretch to full equal width --- */
+.ct-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+/* --- Fix: phone icon rotation in address card --- */
+.ct-address .ct-icon .fa-phone-alt {
+    transform: rotate(90deg);
 }
